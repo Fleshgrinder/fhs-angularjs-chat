@@ -1,0 +1,17 @@
+{
+  "name": "workshop-angular-chat",
+  "version": "0.0.0",
+  "homepage": "https://github.com/nerdbeere/workshop-angular-chat",
+  "authors": [
+    "Richard Fussenegger <richard@fussenegger.info>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

@@ -1,0 +1,27 @@
+<div class="page-header">
+  <h1>Chat</h1>
+</div>
+<div id="chat-wrapper" scroller>
+  <div id="chat-messages">
+    <div class="line" ng-repeat="line in lines">
+      <div class='user'>{{line.user.name}}</div>
+      <div class='text' message></div>
+      <div class='time'>{{line.time}}</div>
+    </div>
+  </div>
+</div>
+<form id="chat-form" class="row" action="/" method="post">
+  <div class="col-xs-11">
+    <textarea class="form-control" rows="1"></textarea>
+  </div>
+  <div class="col-xs-1">
+    <input class="btn btn-success" type="submit" value="Send">
+  </div>
+</form>
+  <div id="username-wrapper">
+    <form id="username-form" class="form-inline" action="/" method="post">
+      <label for="username">Please choose a chat name:</label>
+      <input type="text" id="username" name="username" placeholder="Your name ..." class="form-control" required pattern="^[\w]{3,}$">
+      <input type="submit" value="Name me!" class="btn btn-success">
+    </form>
+  </div>
